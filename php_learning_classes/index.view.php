@@ -9,7 +9,17 @@
 </head>
 
 <body>
-
+    <main>
+        <?php foreach($tasks as $task) : ?>
+        <li>
+            <?php if($task -> completed) : ?>
+            <del><?= $task -> description ?></del>
+            <?php else: ?>
+            <?= $task -> description ?>
+            <?php endif; ?>
+        </li>
+        <?php endforeach; ?>
+    </main>
 </body>
 
 </html>
