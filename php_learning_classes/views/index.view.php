@@ -9,7 +9,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li> <a href="./about.view.php">About Us</a></li>
+            <li><a href="./contact.view.php">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <main>
+        <h3>My Tasks</h3>
+
         <?php foreach($tasks as $task) : ?>
         <li>
             <?php if($task -> completed) : ?>

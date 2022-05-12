@@ -1,11 +1,9 @@
 <?php
-    require "task.class.php";
-    require "functions.php";
-
-    $query = require "bootstrap.php";
-    $tasks = $query -> selectAll("todos");
+    require "./core/task.class.php";
+    require "./core/functions.php";
     
-    dd($tasks);
+    $query = require "./core/bootstrap.php";
+    $tasks = $query -> selectAll("todos");
 
-    require "index.view.php";
+    require "./views/index.view.php";
 ?>
